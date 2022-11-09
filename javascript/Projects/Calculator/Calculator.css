@@ -1,0 +1,19 @@
+.horizontalButton{
+    height:30px;
+    width:60px;
+    color: red;
+    text-align: center;
+}
+.verticalButton{
+    width:47px;
+    height:60px;
+}
+.formstyle  
+{  
+width: 300px;  
+height: 270px;  
+margin: auto;  
+border: 3px solid skyblue;  
+border-radius: 5px;  
+padding: 20px;  
+}  
