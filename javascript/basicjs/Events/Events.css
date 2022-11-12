@@ -1,9 +1,9 @@
 .ChangeButtonColor{
+height:100px;
+width:100px;
 background-color: tomato;
+border-radius: 4px;
 }
-.btn{
-
-    background-color: rgb(0, 255, 213);
-    
-    }
-    
+.onclickcolor{
+    background-color: red;
+}
