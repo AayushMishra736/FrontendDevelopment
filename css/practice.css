@@ -103,6 +103,9 @@ img{
     top: 0px;
 }
 .clearfix{
-clear: left;
-
-}
+    clear: both;
+    display: table;
+    display: inline;
+    font-size: 20px;
+    padding: 20px;
+  }
