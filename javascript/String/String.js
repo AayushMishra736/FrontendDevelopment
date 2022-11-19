@@ -1,0 +1,22 @@
+let str = "Install the latest Powershell";
+let string = "Today is holiday.Tomorrow will not be a holiday.Day after Tomorrow might be holiday."
+console.log(str.length);
+console.log(str.slice(12,19));
+console.log(str.substring(0,10));
+console.log(str.substr(6));
+console.log(str.replace("latest","oldest"));
+console.log(string.replaceAll("holiday","vacation"));
+console.log(str.toUpperCase());
+console.log(string.toLowerCase());
+console.log(string.concat(str));
+let newString = "   Hello World!   ";
+console.log(newString.trim());
+console.log(newString.trimStart());
+console.log(newString.trimEnd());
+let padding = "6";
+console.log(padding.padStart(4,"x"));
+console.log(padding.padEnd(9,"0"));
+console.log(string.charAt(2));
+console.log(string.charCodeAt(3));
+console.log(string[10]);
+console.log(newString.split(" "));
