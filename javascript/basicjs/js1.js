@@ -1,1 +1,1 @@
-alert("Danger");
+document.getElementById("h1").innerHTML = "Aayush";
