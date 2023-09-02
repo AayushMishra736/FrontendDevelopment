@@ -9,3 +9,11 @@ while(start <= end){
     start++;
 }
 console.log("Sum of digit is ",sum);
+
+
+//while loop execution
+let counter = 0;
+while(counter <= 10){
+console.log("Printing the number " + counter);
+counter++;
+}
