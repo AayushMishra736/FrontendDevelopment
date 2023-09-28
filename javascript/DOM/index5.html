@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <ul>
+        <li id = "intro">List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+    <ul id = "first">
+        <li>List a</li>
+        <li id = "secondElement">List b</li>
+        <li>List c</li>
+        <li>List d</li>
+    </ul>
+    <script>
+        let elm = document.getElementById("intro");
+        let prt = elm.parentElement;
+        //prt.innerHTML = "Hello;"
+        console.log(prt)
+        console.log(elm)
+        let firstChild = document.getElementById("first");
+        let child = firstChild.children;
+        console.log(child)
+        let firstChildExample = firstChild.firstChild
+        console.log(firstChildExample)
+        let lastChildExample = firstChild.lastChild
+        console.log(lastChildExample)
+        console.log("Trying to select sibling.")
+        let secondElementSibling = document.getElementById("secondElement");
+        let secElem = secondElementSibling.previousElementSibling
+        console.log(secElem)
+    </script>
+</body>
+</html>

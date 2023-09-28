@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and append element</title>
+</head>
+<body>
+    <div id = "paragraph">
+    <p>Hello this is paragraph one.</p>
+    </div>
+    <script>
+        let elm = document.getElementById("paragraph")
+        let h1 = document.createElement('h1')
+        // let text = document.createTextNode("This is append node.")
+        //appendChild
+        // h1.className = "try pi";
+        // h1.id = "newId";
+
+        h1.textContent = "content Added!!"
+        document.body.appendChild(h1)
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>heading 0</h1>
+    <p>This is paragraph 0</p>
+    <h1 class = "introClass">heading 1</h1>
+    <p class = "introClass">This is paragraph 1</p>
+    <h1 class = "introClass">heading 2</h1>
+    <p class = "introClass">This is paragraph 2</p>
+    <h1 class = "introClass">heading 3</h1>
+    <p>This is paragraph 3</p>
+    <h1>heading 4</h1>
+    <p>This is paragraph 4</p>
+    <button style = "width:190px;height:30px;" onClick = "changeValue()">Change</button>
+    <script>
+    function changeValue(){
+    let data = document.querySelectorAll("p.introClass");
+    for(var i = 0;i < data.length;i++){
+       data[i].innerHTML =  "Changed Value.";
+    }
+    }
+
+    function changeFunction(){
+        
+    }
+    </script>
+</body>
+</html>

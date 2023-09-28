@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert at given position</title>
+</head>
+<body>
+    <ul id = "listView">
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+      <li>List 4</li>
+    </ul>
+    <script>
+      let data = document.getElementById('listView');
+      let item = document.createElement('li');
+    //data.appendChild(item)
+    //let pos = data.firstElementChild
+    //data.insertBefore(item,pos)
+
+      item.textContent = "text 2"
+      let newPos = data.firstElementChild.nextElementSibling;
+      data.insertBefore(item, newPos)
+
+      item.textContent = "text 5"
+      let thirdPos = data.firstElementChild.nextElementSibling.nextElementSibling;
+      data.insertBefore(item, thirdPos)
+
+      let parent = document.body;
+      let newValue = document.getElementById('listView');
+      let newItem = document.createElement('h2');
+      newItem.textContent = "This is H2 element.";
+      parent.insertBefore(newItem,newValue)
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change By tag name</title>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h1>Heading 1</h1>
+    <button id = "Changebutton" onclick="changeByTagName()">Change</button>
+    <button id = "Revertbutton" onclick="changeByTagNameRevert()">Revert</button>
+    <script>
+     function changeByTagName(){
+        let data = document.getElementsByTagName("h1");
+        for(var x = 0;x < data.length;x++){
+            data[x].innerHTML = "New Headings";
+        }
+    }
+    function changeByTagNameRevert(){
+        let value = document.getElementsByTagName("h1");
+        for(var y = 0;y < data.length;y++){
+            value[y].innerHTML = "Heading 1  1";
+        }
+    }
+    </script>
+</body>
+</html>

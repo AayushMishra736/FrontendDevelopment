@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change by class name</title>
+</head>
+<body>
+    <ul class = "list1">List1</ul>
+    <ul id = "first">List2</ul>
+    <ul class = "list1">List3</ul>
+	<input type = "text" id = "field"></input>
+	<button onclick = "changeByClassName(),selectValue()">Submit</button>
+    <script>
+        function selectValue(){
+        let data = document.getElementById("field").value;
+        console.log(data);
+        }
+        function changeByClassName(){
+        let elm = document.getElementsByClassName("list1");
+        for(let i = 0;i < elm.length ;i++){
+        elm[i].innerHTML = "Hello world!";
+        }
+        }
+    </script>
+</body>
+</html>

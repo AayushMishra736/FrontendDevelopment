@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Change by id</title>
+</head>
+<body>
+<ul>List1</ul>
+<ul id = "list2">List2</ul>
+<ul>List3</ul>
+<input type="text" id = "textField1" name="textField1">
+<button id = "buttonSubmit" onclick="selectValue()">Submit</button>
+<script type = "text/javascript">
+function selectValue(){
+	let data = document.getElementById("textField1").value;
+	console.log(data);
+}
+</script>	
+</body>
+</html>
