@@ -9,11 +9,34 @@
     <div id = "intro">
         <h2>Heading 2</h2>
         <p>This is paragraph.</p>
+        <button>Add</button>
     </div>
     <script>
         let elm = document.getElementById("intro");
         let htmlText = "<h1>This is H1 tag</h1>";
-        elm.insertAdjacentElement("beforebegin",htmlText);
+        elm.insertAdjacentHTML("beforebegin",htmlText);
+        elm.insertAdjacentHTML("afterbegin",htmlText);
+        elm.insertAdjacentHTML("beforeend",htmlText);
+        elm.insertAdjacentHTML("afterend",htmlText);
+
+        elm.setAttribute("class","form1");
+        let attribute = elm.getAttribute("class");
+        console.log(attribute);
+        let checkAttribute = elm.hasAttribute("form1");
+        console.log(checkAttribute);
+        elm.removeAttribute("class");
+
+        let parentbtnId = document.getElementById("intro");
+        ///let btnNewId = parentbtnId.querySelector(":last-child");
+        let btnNewId = parentbtnId.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling;
+        btnNewId.setAttribute("id","btnNewId");
+        console.log("New Element btn " + btnNewId);
+        btnNewId.style.cssText += "background-color: red;color : white; border: 12px solid green;"
+        btnNewId.style.color = "green";
+
+        let cssValue = getComputedStyle(btnNewId);
+        console.log(cssValue)
+
     </script>
 </body>
 </html>

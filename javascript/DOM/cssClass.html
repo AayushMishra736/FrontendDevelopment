@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+        background-color: aqua;
+        color: red;
+        }
+        .dim{
+            border: 1px solid red;
+            padding: 100px;
+        }
+        </style>
+</head>
+<body>
+    <div id = "box" class = "color dim">
+<p>This is dummy variable.</p>
+    </div>
+    <button id = "buttonNew""> Submit  !!!</button>
+<script>
+// let box = document.getElementById("box");
+// // box.className += " dim"
+// // console.log(box)
+// // console.log(box.classList)
+// // box.classList.add("dim")
+// // box.classList.remove("dim")
+// // for(let css of box.classList){
+// //     console.log(css)
+// // }
+// // box.classList.replace("color","dim")
+
+// ///width and height of box
+// let width = box.clientWidth;
+// let height = box.clientHeight
+
+// console.log(width);
+// console.log(height)
+
+function onButtonClick(){
+    alert("Button is clicked")
+}
+
+let btn = document.getElementById("buttonNew");
+///btn.addEventListener('click',onButtonClick)
+
+// btn.addEventListener('click',function(){
+// alert("Hi i have clicked the button.")
+// })
+// btn.addEventListener('mouseover',function(){
+//     alert("i am hovering a mouse on button")
+// })
+// btn.addEventListener('mouseout',function(){
+//     alert("This is mouse out on button")
+// })
+
+let newButton = "<button>Second btn</button>";
+btn.insertAdjacentHTML("afterend",newButton)
+
+newButton.style.cssText += "background-color: red;color : white; border: 12px solid green;"
+function click1(){
+    alert("Butoon is clicked first time")
+}
+
+</script>
+</body>
+</html>
