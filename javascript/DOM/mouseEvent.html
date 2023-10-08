@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #boxEve{
+background-color: brown;
+height: 100px;
+width: 200px
+    }
+    </style>
+</head>
+<body>
+    <div id = "boxEve" onclick="fun()">
+    </div>
+    <button oncontextmenu = "btnClick()">Right click!!</button></br>
+    <button ondblclick = "dblClickButtonerror()">Double click!!</button></br>
+    <button onmousedown = "btnmouseDown()">Mouse Down!!</button></br>
+    <button onmouseup = "btnonmouseup()">Mouse up !!</button></br>
+    <script>
+function fun(){
+    alert("On click event!!");
+}
+function dblClickButtonerror(){
+    alert("on double click it will generate error!!")
+}
+function btnClick(){
+    alert("If right click on button it will give alert!!");
+}
+function btnmouseDown()
+{
+    alert("f mouse down it will give alert!!");
+}    
+function btnonmouseup()
+{
+    alert("if mouse up it will give alert!!");
+}  
+</script>
+</body>
+</html>

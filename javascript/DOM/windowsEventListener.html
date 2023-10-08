@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id = "image1" crossorigin="anonymous" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png" class="png" width="336" height="252">
+<script>
+window.addEventListener('DOMContentLoaded',function(){
+    console.log("DOMContentLoaded and tree created.");
+})
+
+let img = document.getElementById("image1");
+
+img.addEventListener('load',function(){
+    console.log("load of event.")
+})
+
+
+
+</script>
+</body>
+</html>
