@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type = "text" id="firstInput">
+    </br>
+    <input type = "text" id="secondInput">
+    </form>
+    <script>
+let x = document.getElementById("firstInput");
+x.addEventListener('focus',function(){
+x.style.background = "yellow";
+});
+x.addEventListener('blur',function(){
+    x.style.background = "green";
+});
+x.addEventListener('change',function(value){
+    console.log(this.value);
+});
+
+let y = document.getElementById("secondInput");
+y.addEventListener('input',function(value){
+console.log(this.value)
+})
+    </script>
+</body>
+</html>
